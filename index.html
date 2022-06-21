@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/burguer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
+    <title>🎮 GamesFlix | Home</title>
+</head>
+<body>
+    
+    <header>
+        <img src="img/joystick.png" alt="Logo Joystick">
+
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            <ul id="menu">
+                <a href="#home"class="nav-btn"><li >Home</li></a>
+                <a href="#games"class="nav-btn"><li >Jogos</li></a>
+                <a href="#footer"class="nav-btn"><li >Sobre nós</li></a>
+                <a href="#modal" class="nav-btn"><li >Login</li></a>
+            </ul>
+            </div>
+        </nav>
+        <nav class="nav-desktop">
+            <a href="#home"class="nav-btn"><li >Home</li></a>
+            <a href="#games"class="nav-btn"><li >Jogos</li></a>
+            <a href="#footer"class="nav-btn"><li >Sobre nós</li></a>
+            <a href="#modal" class="nav-btn"><li >Login</li></a>
+        </nav>
+
+    </header>
+    
+    
+    <section id="home" class="banner">
+        <section class="ver-mais">
+            <div class="container-ver-mais">
+            <h1>Games Flix</h1>
+            <p>Confira a maior coletânea de games que a GamesFlix tem a te oferecer</p>
+            <a href="#games"><button class="btn-banner">Explorar</button></a>
+            </div>
+    </section>
+        
+        <!--Modal-->
+        <div id="modal" class="modal">
+            <a href="#"  class="fecharModal">X</a>
+                <img class="joystick"src="img/joystick.png" alt="Logo Joystick">
+                <img class="background"src="https://img.freepik.com/fotos-gratis/homens-jogando-videogame_137573-639.jpg?w=996" alt="homem_jogando">
+                <form class="login">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password">
+                    <input class="btn_Enviar"  type="submit" value="Login">
+                </form> 
+        </div>
+    </section>
+   
+
+
+    <h1 id="games">GAMES</h1>
+    <main >                
+    
+        <section class="container">
+            <section class="cards">
+                <img src="img/eldenBanner.jpg" alt="Imagem jogo ">
+                <div class="card-content">
+                    <h2>ELDEN RING</h2>
+                    <div class="card-text">
+                        <p>Mais novo Lançamento da FronSoftware, criadora de outros títulos da série Souls.</p>
+                        <p> Um ótimo jogo, desafiador para os jogadores mais exigentes. Nota</p>
+                    </div>
+                    <a href="./elden.html" ><button>Ver Mais</button></a>
+                </div>
+            </section>
+
+            <section class="cards">
+                <img src="img/TlouBanner.jpg" alt="Imagem jogo The Last of Us Part 2">
+                <div class="card-content">
+                    <h2>The Last Of Us - Part II</h2>
+                    <div class="card-text">
+                        <p>Sucessor do aclamado The Last of Us, o jogo da continuídade a eventos 5 anos após seu predecessor</p>
+                        <p>Teste seus limítes nesta história de tirar o folêgo</p>
+                    </div>
+                    <a href="./tlou.html" ><button>Ver Mais</button></a>
+                </div>
+            </section>
+
+            <section class="cards">
+                <img src="img/warzoneBanner.jpg" alt="Imagem jogo Call of Duty Warzone">
+                <div class="card-content">
+                    <h2>Call of Duty - Warzone</h2>
+                    <div class="card-text">
+                        <p>Battleroyale em grande escala nos moldes de Call of Duty Modern Warfare</p>
+                        <p> Monte sua equipe e seja a ultima a sobreviver. Utilize de um vasto cenário e arsenal</p>
+                    </div>
+                    <a href="./warzone.html" ><button>Ver Mais</button></a>
+                </div>
+            </section>
+
+            <section class="cards">
+                <img src="img/doomBanner.jpg" alt="Imagem jogo Doom Eternal">
+                <div class="card-content">
+                    <h2>DOOM - Eternal</h2>
+                    <div class="card-text">
+                        <p>Sucessor do grande sucesso DOOM 2017, massacre aliens como nos anos 80 mas agora em HD.</p>
+                        <p>Hordas massivas de aliens, vasto arsenal... Pule, atire, massacre e salves as luas de marte.</p>
+                    </div>
+                    <a href="./doom.html" ><button>Ver Mais</button></a>
+                </div>
+            </section>
+
+            <section class="cards">
+                <img src="img/bloodborneBanner.jpg" alt="Imagem jogo Bloodborne">
+                <div class="card-content">
+                    <h2>Bloodborne</h2>
+                    <div class="card-text">
+                        <p>Souls Like Gótico e Punitivo da aclamada From Software, criadora da série Souls</p>
+                        <p>Assuma a identidade de um caçador e enfrente hordas de infestados e criaturas pestilentas para salvar o sonho do caçador.</p>
+                    </div>
+                    <a href="./bloodborne.html" ><button>Ver Mais</button></a>
+                </div>
+            </section>
+
+            <section class="cards">
+                <img src="img/residentevilBanner.jpeg" alt="Imagem jogo Resident Evil 2 Remake">
+                <div class="card-content">
+                    <h2>Resident Evil 2</h2>
+                    <div class="card-text">
+                        <p>Remake de um dos maiores Survival Horror dos anos 90. Retorne a Raccon City junto a Claire e Leon mas agora em HD</p>
+                        <p>Cenários repensados e remodelados, clima intenso... A sensação de um Survival Horro dos anos 90 mas em Full HD</p>
+                    </div>
+                    <a href="./revil2.html" ><button>Ver Mais</button></a>
+                </div>
+            </section>
+        </section>
+    
+    </main>
+
+    <footer id="footer">
+
+        <div id="aluno1">
+            <h2>Ramon Roman</h2>
+            <p>Responsável pelo desenvolvimento do código, organização, estrutura de páginas, responsividade, imagens, modelos e textos.</p>
+           <a href="https://www.linkedin.com/in/ramon-roman-mauri-junior-878160109/" target="_blank"><img  src="img/linkedin.png" alt="logo LinkedIn"></a>
+           <a href="https://github.com/ramonroman" target="_blank"><img id="git" src="img/github.png" alt="logo github"></a>
+        </div>
+
+
+        <div id="aluno2">
+            <h2>Johni Tobias</h2>
+            <p>Responsável pelo desenvolvimento do código, criação do menú Hamburguer, estilização e correção.</p>
+            <a href="" target="_blank"> <img src="img/linkedin.png" alt="logo LinkedIn"></a>
+            <a href="" target="_blank"> <img id="git"  src="img/github.png" alt="logo github"></a>
+        </div>
+        
+
+        <div id="aluno3">
+            <h2>Pedro Simplício</h2>
+            <p>Responsável pelo desenvolvimento do código, criação do Modal de Login, estilização e correção.</p>
+            <a href="" target="_blank"><img src="img/linkedin.png" alt="logo LinkedIn"></a>
+            <a href="" target="_blank"><img id="git"  src="img/github.png" alt="logo github"></a>
+        </div>
+
+        <div id="copyright">
+            <h4 >© Direitos reservados</h4>
+        </div>
+    </footer>
+
+
+</body>
+</html>

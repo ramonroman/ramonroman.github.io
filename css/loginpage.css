@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    max-width: 425px;
+    font-family: 'roboto', sans-serif;
+    letter-spacing: 2px;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    width: 100vw;
+    height: 70px;
+    background-color: rgb(66, 2, 66);
+    padding: 0 20px;
+}
+nav{
+    display: flex;
+
+
+}
+
+header li{
+   
+    
+}
+
+header a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+
+}
+
+header img{
+    width: 50px;
+}
+
+nav{
+    display: flex;
+}
+
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/bannergames.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+.ver-mais{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+section a 
+{
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    top: -3%;   
+}
+
+/* .abrirModal{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'roboto';
+    font-size: 25px;
+    height: 50px;
+    width: 300px;
+    background-color: purple;
+    opacity: 0.7;
+    margin-top: 50px;
+    box-shadow: 0px 3px 2px purple; 
+    text-decoration: none;
+
+
+
+} */
+
+
+.btn-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'roboto';
+    font-size: 25px;
+    height: 50px;
+    width: 300px;
+    background-color: purple;
+    opacity: 0.7;
+    margin-top: 50px;
+    box-shadow: 0px 3px 2px purple;
+    cursor: pointer;
+} 
+
+
+.container-ver-mais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 425px;
+    height: 100%;
+    padding: 10px 0;
+    gap: 10px;
+}
+
+.ver-mais h1{
+    width: 70%;
+    color: red;
+    opacity: 0.8;
+    font-size: 40px;
+    text-align: left;
+}
+
+.ver-mais p{
+    text-align: left;
+    color: white;
+    width: 70%;
+    font-size: 18px;
+}
+
+
+#games{
+    width: 425px;
+    color: white;
+    background-color: rgb(66, 2, 66);
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+ .modal{ 
+    background-color: black;
+    position: fixed;
+    visibility: hidden;
+    top: 15%;
+    left: 25%;
+    width: 49vw;
+    height: 78vh;
+    opacity: 1;
+    border-radius: 100px;
+    border-radius: 14px;
+   
+
+} 
+
+
+
+.modal:target
+{
+    visibility: visible;
+    opacity: 1;
+    
+} 
+
+
+
+
+.joystick{
+    position: absolute;
+    top: 9%;
+    left: 39%;
+    right: 0%;
+    bottom: 0%; 
+    width: 100px;
+    height: 100px;
+
+}
+
+.login
+{
+    position: absolute;
+    top: 39%;
+    left: 34%;
+    right: 0%;
+    bottom: 1%;
+    width: 111px;
+    height: 108px;
+
+}
+
+
+.background
+{
+  
+    position: relative;
+    top: -5%;
+    left: 0%;
+    right: 0%;
+    bottom: 1%;
+    width: 49vw;
+    height: 79vh;
+    opacity: 143%;
+    z-index: -2;
+    border-radius: 14px;
+
+
+}
+
+.btn_Enviar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'roboto';
+    font-size: 19px;
+    height: 36px;
+    width: 175px;
+    background-color: purple;
+    opacity: 5.7;
+    margin-top: 17px;
+    box-shadow: 0px 3px 2px purple;
+    cursor: pointer;
+}

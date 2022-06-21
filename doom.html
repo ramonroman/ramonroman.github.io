@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/doom.css">
+    <link rel="stylesheet" href="css/burguer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
+    <title>🎮 GamesFlix | DOOM - Eternal</title>
+</head>
+<body>
+    <header>
+        <img src="img/joystick.png" alt="Logo Joystick">
+
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            <ul id="menu">
+                <a href="./index.html" class="nav-btn"><li >Home</li></a>
+                <a href="#about"class="nav-btn"><li >Sobre</li></a>
+                <a href="#footer"class="nav-btn"><li >Sobre nós</li></a>
+                <a href="#modal" class="nav-btn"><li >Login</li></a>
+            </ul>
+            </div>
+        </nav>
+        <nav class="nav-desktop">
+            <a href="./index.html"class="nav-btn"><li >Home</li></a>
+            <a href="#about"class="nav-btn"><li >Sobre</li></a>
+            <a href="#footer"class="nav-btn"><li >Sobre nós</li></a>
+            <a href="#modal" class="nav-btn"><li >Login</li></a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <section class="ver-mais">
+            <div class="container-ver-mais">
+                <h1 >DOOM - Eternal</h1>
+                <p>MASSACRANDO DEMÔNIOS DE MARTE</p>
+            </div>
+        </section>
+                
+        <!--Modal-->
+        <div id="modal" class="modal">
+            <a href="#"  class="fecharModal">X</a>
+                <img class="joystick"src="img/joystick.png" alt="Logo Joystick">
+                <img class="background"src="https://img.freepik.com/fotos-gratis/homens-jogando-videogame_137573-639.jpg?w=996" alt="homem_jogando">
+                <form class="login">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password">
+                    <input class="btn_Enviar"  type="submit" value="Login">
+                </form> 
+        </div>
+    </section>
+
+    <main id="about">
+
+        <section class="container">
+            <section class="card-content">
+            <div class="icon">
+                <h1 class="nota">DOOM Eternal</h1>
+                <a href="https://www.idsoftware.com/?/age_gate" target="_blank"> <p>Id Software</p></a>
+                <a href="https://bethesda.net/pt/dashboard" target="_blank"><p>Bethesda Softworks</p></a>
+                <div class="icons8-estrelas-da-briga"></div>
+                <div class="icons8-estrelas-da-briga"></div>
+                <div class="icons8-estrelas-da-briga"></div>
+                <div class="icons8-estrelas-da-briga"></div>
+                <div class="icons9-estrelas-da-briga"></div>    
+            </div>
+             
+            <section class="about">
+                <div class="card-text">
+                    <p>
+                        A história de Doom Eternal é bem simples de você entender, por alto. Se trata de um personagem, Slayer, que vai até o inferno derrotar os demônios que invadiram a terra. Porém, um dos destaques desse jogo é que ele também dá valor para o jogador que tem interesse na lore de Doom Eternal.
+                    </p>
+                </div>
+
+            </section>
+        </section>
+    </section>
+
+            <section class="video">
+            <h2>Trailer</h2>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_J2YcaVqjCQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+
+    </main>
+    <footer id="footer">
+
+        <div id="aluno1">
+            <h2>Ramon Roman</h2>
+            <p>Responsável pelo desenvolvimento do código, organização, estrutura de páginas, responsividade, imagens, modelos e textos.</p>
+           <a href="https://www.linkedin.com/in/ramon-roman-mauri-junior-878160109/" target="_blank"><img  src="img/linkedin.png" alt="logo LinkedIn"></a>
+           <a href="https://github.com/ramonroman" target="_blank"><img id="git" src="img/github.png" alt="logo github"></a>
+        </div>
+
+
+        <div id="aluno2">
+            <h2>Johni Tobias</h2>
+            <p>Responsável pelo desenvolvimento do código, criação do menú Hamburguer, estilização e correção.</p>
+            <a href="" target="_blank"> <img src="img/linkedin.png" alt="logo LinkedIn"></a>
+            <a href="" target="_blank"> <img id="git"  src="img/github.png" alt="logo github"></a>
+        </div>
+        
+
+        <div id="aluno3">
+            <h2>Pedro Simplício</h2>
+            <p>Responsável pelo desenvolvimento do código, criação do Modal de Login, estilização e correção.</p>
+            <a href="" target="_blank"><img src="img/linkedin.png" alt="logo LinkedIn"></a>
+            <a href="" target="_blank"><img id="git"  src="img/github.png" alt="logo github"></a>
+        </div>
+
+        <div id="copyright">
+            <h4 >© Direitos reservados</h4>
+        </div>
+    </footer>
+</body>
+</html>
