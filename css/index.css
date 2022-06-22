@@ -208,7 +208,7 @@ main {
     display: flex;
     flex-direction: row;
     height: 100%;
-    width: 425px;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap; 
