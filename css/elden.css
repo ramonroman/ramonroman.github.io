@@ -202,7 +202,7 @@ main {
     width: 425px;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap; 
+    flex-wrap: nowrap; 
     background-image: url("../img/bannergames.webp");
     background-repeat: no-repeat;
     background-size: cover;
@@ -216,7 +216,7 @@ main {
 
 .container{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     width: 80%;
@@ -224,7 +224,7 @@ main {
     padding: 10px 10px;
     background-color:rgb(66, 2, 66);
     box-shadow: 5px 10px 10px purple;
-    margin-bottom: 60px;
+
 }
 
 .nota{
