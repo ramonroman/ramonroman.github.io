@@ -216,7 +216,7 @@ main {
 
 .container{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 80%;
