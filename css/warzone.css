@@ -57,7 +57,7 @@ header img{
     background-image: url("../img/warzoneBanner.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center;
     background-attachment: scroll;
 }
 
