@@ -59,7 +59,7 @@ nav{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 .ver-mais{
