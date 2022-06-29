@@ -12,7 +12,7 @@ body{
     width: 425px;
     font-family: 'roboto', sans-serif;
     letter-spacing: 2px;
-    background-color: black;
+        background-color: rgb(66, 2, 66);
 }
 
 
@@ -26,6 +26,7 @@ header{
     background-color: rgb(66, 2, 66);
     padding: 0 20px;
     z-index: 2;
+
 }
 
 header li{
@@ -57,13 +58,13 @@ nav{
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 100%;
+    width: 425px;
     height: 100vh;
     background-image: url("../img/bannergames.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
-    background-attachment: scroll;
+    background-attachment: fixed;
 }
 
 .ver-mais{
@@ -90,6 +91,7 @@ nav{
     opacity: 0.7;
     margin-top: 50px;
     box-shadow: 0px 3px 2px purple;
+    color: pink;
 }
 
 .container-ver-mais{
@@ -165,7 +167,7 @@ nav{
     color: white;
     position: absolute;
     top: 29%;
-    left: 30%;
+    left: 25%;
     right: 0%;
     bottom: 1%;
     width: 111px;
@@ -208,15 +210,14 @@ main {
     display: flex;
     flex-direction: row;
     height: 100%;
-    width: 100%;
+    width: 100vw;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap; 
     background-image: url("../img/bannergames.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center top;
-    background-attachment: scroll;
+    background-attachment: fixed;
 }
 
 .container{
@@ -234,7 +235,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     width: 300px;
-    height: 525px;
+    height: 500px;
     margin-top: 20px;
     background-color: rgb(66, 2, 66);
     border-radius: 10px;
@@ -277,7 +278,7 @@ h2 {
 
 }
 
-button{
+.card-btn{
     display: flex;
     position: relative;
     flex-wrap: wrap;
@@ -292,7 +293,7 @@ button{
     cursor: pointer;
 }
 
-button a{
+.card-btn a{
     text-align: center;
     text-decoration: none;
     color: white;
@@ -311,7 +312,7 @@ footer{
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    height: 500px;
+    height: 650px;
     background-color:rgb(66, 2, 66);
     padding: 10px 20px;
     gap: 5px;
@@ -365,6 +366,20 @@ footer img{
     justify-content: flex-start;
 }
 
+#aluno4{
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#aluno4 p{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
 #copyright{
     width: 100%;
     display: flex;
@@ -381,13 +396,13 @@ footer img{
 /* Ajuste para resolução até 1280px */
 
     @media (min-width: 426px) and (max-width: 1280px){
-    
     body{
         max-width: 1280px;
         width: 100%;
         font-family: 'roboto', sans-serif;
         letter-spacing: 2px;
         overflow-x: hidden;
+        background-color: rgb(66, 2, 66);
     }
 
     header{
@@ -432,6 +447,11 @@ footer img{
         color: white;
         margin: 5px;
         text-decoration: none;
+        transition: .3s;
+    }
+
+    header a:hover{
+        transform: scale(.9);
     }
 
     header img{
@@ -477,6 +497,12 @@ footer img{
         opacity: 0.7;
         margin-top: 90px;
         border: 2px solid black;
+        transition: .3s;
+    }
+
+    .btn-banner:hover{
+        transform: scale(0.9);
+        color: red;
     }
 
     .container-ver-mais{
@@ -527,11 +553,20 @@ footer img{
         opacity: 1;
         
     } 
+    .fecharModal{
+        position: fixed;
+        top: 24%;
+        left: 17%;
+        right: 0%;
+        bottom: 0%;
+        width: 6rem;
+
+    }
 
     .joystick{
         position: absolute;
         top: 9%;
-        left: 66%;
+        left: 53%;
         right: 0%;
         bottom: 0%; 
         width: 100px;
@@ -543,8 +578,8 @@ footer img{
     {
         color: white;
         position: absolute;
-        top: 29%;
-        left: 60%;
+        top: 25%;
+        left: 47%;
         right: 0%;
         bottom: 1%;
         width: 111px;
@@ -627,7 +662,12 @@ footer img{
         border-radius: 10px;
         box-shadow: 5px 5px 5px purple;
         margin: 20px 20px;
+        transition: .3s;
  
+    }
+
+    .cards:hover{
+        transform: scale(1.2);
     }
 
     h2 {
@@ -654,13 +694,13 @@ footer img{
         margin-top: 10px;
         padding: 10px 10px;
         background-color: rgb(0, 0, 0);
-        opacity: 0.5;
+        opacity: 0.6;
         color: white;
         border-radius: 10px;
         padding-bottom: 100px;
     }
 
-    button{
+    .card-btn{
         display: flex;
         position: relative;
         flex-wrap: wrap;
@@ -672,12 +712,17 @@ footer img{
         top: -70px;
         border-radius: 10px;
         opacity: 0.5;
-        background-color: black;
+        background-color: purple;
+        opacity: .5;
         color: white;
         cursor: pointer;
     }
 
-    button a{
+    .card-btn a:hover{
+        color: red;
+    }
+
+    .card-btn a{
         text-align: center;
         text-decoration: none;
         color: white;
@@ -696,7 +741,7 @@ footer img{
         justify-content: space-between;
         flex-wrap: wrap;
         width: 100%;
-        height: 350px;
+        height: 340px;
         background-color:rgb(66, 2, 66);
         padding: 40px 30px;
         gap: 5px;
@@ -740,6 +785,7 @@ footer img{
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
+        padding-right: 10px;
     }
 
     #aluno3 p{
@@ -747,7 +793,27 @@ footer img{
         display: flex;
         justify-content: flex-end;
         text-align: right;
+        flex-wrap: wrap;
     }
+    
+    #aluno4{
+        width: 33.33%;
+        gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: absolute;
+        left: 33.33%;
+        top: 2090px;
+    }
+    
+    #aluno4 p{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    
 
     #copyright{
         position: relative;
@@ -755,10 +821,9 @@ footer img{
         justify-content: center;
         align-items: center;
         text-align: center;
-        bottom: 20px;
+        bottom: -50px;
+        height: 0px;
         right: 825px;
-
-
     }
 
 
@@ -770,6 +835,7 @@ footer img{
             max-width: 3000px;
             font-family: 'roboto', sans-serif;
             letter-spacing: 2px;
+            overflow-x: hidden;
         }
 
         header{
@@ -787,6 +853,14 @@ footer img{
             display: inline-flex;
         }
 
+        nav{
+            display: none;
+        }
+
+        .nav-desktop{
+            display: flex;
+        }
+
         .nav-btn{
             display: inline-flex;
             justify-content: center;
@@ -796,6 +870,11 @@ footer img{
             width: 100px;
             height: 30px;
             font-size: 18px;
+            transition: .3s;
+        }
+
+        .nav-btn:hover{
+            color: red;
         }
 
         #color{
@@ -818,7 +897,7 @@ footer img{
             align-items: center;
             flex-wrap: wrap;
             flex-direction: column;
-            width: 100%;
+            width: 100vw;
             height: 100vh;
             background-image: url("../img/bannergames.webp");
             background-size: cover;
@@ -851,6 +930,12 @@ footer img{
             opacity: 0.7;
             margin-top: 90px;
             border: 2px solid black;
+            transition: .3s;
+        }
+
+        .btn-banner:hover{
+            transform: scale(0.9);
+            color: red;
         }
 
         .container-ver-mais{
@@ -893,6 +978,15 @@ footer img{
             border-radius: 14px;
             z-index: 1;
         } 
+        .fecharModal{
+            position: fixed;
+            top: 24%;
+            left: 17%;
+            right: 0%;
+            bottom: 0%;
+            width: 6rem;
+
+        }
 
         .modal:target
         {
@@ -904,7 +998,7 @@ footer img{
         .joystick{
             position: absolute;
             top: 9%;
-            left: 50%;
+            left: 81%;
             right: 0%;
             bottom: 0%; 
             width: 100px;
@@ -916,8 +1010,8 @@ footer img{
         {
             color: white;
             position: absolute;
-            top: 29%;
-            left: 30%;
+            top: 28%;
+            left: 77%;
             right: 0%;
             bottom: 1%;
             width: 111px;
@@ -928,7 +1022,7 @@ footer img{
         {
             position: relative;
             top: -5%;
-            left: 0%;
+            left: 18%;
             right: 0%;
             bottom: 1%;
             width: 70vw;
@@ -948,28 +1042,34 @@ footer img{
             height: 36px;
             width: 175px;
             background-color: purple;
-            opacity: .9;
+            opacity: .7;
             color: white;
             margin-top: 17px;
             box-shadow: 0px 3px 2px purple;
             cursor: pointer;
+            transition: .3s;
+        }
+
+        .btn_Enviar:hover{
+            transform: scale(.9);
+            color: red;
         }
         /*Fim Modal*/
 
         #games{
-            width: 100%;
+            width: 100vw;
             color: white;
             background-color: rgb(66, 2, 66);
             text-align: center;
             font-size: 50px;
         }
 
-        main {
-            padding: 50px 0px;
+        main{
+            padding: 10px 0px;
             display: flex;
             flex-direction: column;
             height: 100%;
-            width: 100%;
+            width: 100vw;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap; 
@@ -988,146 +1088,183 @@ footer img{
             width: 100%;
             height: 100%;
             padding: 10px 0px;
+            padding-right: 45px;
         }
 
         .cards{
             display: flex;
             flex-wrap: wrap;
-            width: 700px;
+            width: 600px;
             height: 500px;
-            border: 1px solid whitesmoke;
-            margin-top: 20px;
             background-color: rgb(66, 2, 66);
-            border-radius: 10px;
+            border-radius: 25px;
             box-shadow: 5px 5px 5px purple;
-            margin-left: 30px;
+            margin-left: 20px;
+            transition: .3s;
         }
 
+        .cards:hover{
+            transform: scale(1.2);
+            z-index: 1;
+            padding-left: 5px;
+            box-shadow: 10px 10px 5px purple;;
+        }
+    
         h2 {
-            text-align: center;
-            padding-top:20px;
-        }
+        text-align: center;
+        padding-top:20px;
+    }
 
-        .card-content{
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            height: 300px;
-            color: Pink;
-        }
+    .card-content{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 300px;
+        color: Pink;
+    }
 
-        .card-text{
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            width: 680px;
-            height: 230px;
-            text-align: left;
-            margin-top: 10px;
-            padding: 10px 10px;
-            background-color: rgb(0, 0, 0);
-            opacity: 0.5;
-            color: white;
-            border-radius: 10px;
-            padding-bottom: 100px;
-        }
+    .card-text{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 680px;
+        height: 230px;
+        text-align: left;
+        margin-top: 10px;
+        padding: 10px 10px;
+        background-color: rgb(0, 0, 0);
+        opacity: 0.5;
+        color: white;
+        border-radius: 10px;
+        padding-bottom: 100px;
+    }
 
-        button{
-            display: flex;
-            position: relative;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            width: 300px;
-            height: 50px;
-            top: -70px;
-            border-radius: 10px;
-            opacity: 0.5;
-            background-color: black;
-            color: white;
-            cursor: pointer;
-        }
+    .card-btn{
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 50px;
+        top: -70px;
+        border-radius: 10px;
+        opacity: 0.5;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        transition: .3s;
+    }
 
-        button a{
-            text-align: center;
-            text-decoration: none;
-            color: white;
-        }
+    .card-btn:hover{
+        color: red;
+        transform: scale(0.9);
+    }
 
-        .cards img{
-            display: flex;
-            width: 100%;
-            height: 200px;
-            border-radius: 10px;
-        }
+    .card-btn a{
+        text-align: center;
+        text-decoration: none;
+        color: white;
+    }
 
-        footer{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            width: 100%;
-            height: 250px;
-            background-color:rgb(66, 2, 66);
-            padding: 40px 20px;
-            gap: 5px;
-            font-size: 14px;
-            color: pink;
+    .cards img{
+        display: flex;
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+    }
 
-        }
-
-        footer img{
-            width: 30px;
-            border-radius: 100%;
-        }
-
-        #aluno1{
-            width: 33.33%;
-            gap: 10px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-        }
-
-        #aluno1 p{
-            width: 100%;
-            display: flex;
-            justify-content: flex-start;
-        }
-
-        #aluno2{
-            width: 33.33%;
-            gap: 10px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        #aluno2 p{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-
-        #aluno3{
-            width: 33.33%;
-            gap: 10px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-end;
-        }
-
-        #aluno3 p{
-            width: 100%;
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        #copyright{
-            position: relative;
-            right: 1670px;
-            width: 100%;
-        }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 250px;
+        background-color:rgb(66, 2, 66);
+        padding: 40px 20px;
+        gap: 5px;
+        font-size: 14px;
+        color: pink;
 
     }
+
+    footer img{
+        width: 25px;
+        border-radius: 100%;
+    }
+
+    #aluno1{
+        width: 33.33%;
+        gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    #aluno1 p{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #aluno2{
+        width: 33.33%;
+        gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #aluno2 p{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #aluno3{
+        width: 33.33%;
+        gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        padding-right: 20px;
+        padding-right: 15px;
+    }
+
+    #aluno3 p{
+        text-align: right;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    #aluno4{
+        width: 35%;
+        gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: absolute;
+        left: 33.33%;
+        top: 2250px;
+    }
+    
+    #aluno4 p{
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #copyright{
+        position: relative;
+        text-align: center;
+        right: 1270px;
+        width: 100%;
+        top: 140px;
+    }
+}
