@@ -27,6 +27,11 @@ header{
     z-index: 3;
 }
 
+.logo-return{
+    margin: 0px;
+    padding: 0px;
+}
+
 .nav-desktop{
     display: none;
 }
