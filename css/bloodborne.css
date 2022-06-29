@@ -8,11 +8,10 @@
 
 body{
     max-width: 425px;
-    width: 100%;
     font-family: 'roboto', sans-serif;
     letter-spacing: 2px;
     overflow-x: hidden;
-    background-color: black;
+    background-color: rgb(66, 2, 66);
 
 }
 
@@ -23,7 +22,7 @@ header{
     justify-content:space-between ;
     position: fixed;
     z-index: 3;
-    width: 100%;
+    width: 425px;
     height: 70px;
     background-color: rgb(66, 2, 66);
     padding: 0 20px;
@@ -54,13 +53,13 @@ header img{
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 100%;
+    width: 425px;
     height: 100vh;
     background-image: url("../img/bloodborne.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
-    background-attachment: scroll;
+    background-attachment: fixed;
 }
 
 .ver-mais{
@@ -153,7 +152,7 @@ header img{
     color: white;
     position: absolute;
     top: 29%;
-    left: 30%;
+    left: 25%;
     right: 0%;
     bottom: 1%;
     width: 111px;
@@ -204,7 +203,7 @@ main {
     background-image: url("../img/bannergames.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: fixed;
 
 }
 
@@ -546,11 +545,20 @@ footer img{
         opacity: 1;
         
     } 
+    .fecharModal{
+        position: fixed;
+        top: 24%;
+        left: 17%;
+        right: 0%;
+        bottom: 0%;
+        width: 6rem;
+
+    }
 
     .joystick{
         position: absolute;
         top: 9%;
-        left: 66%;
+        left: 53%;
         right: 0%;
         bottom: 0%; 
         width: 100px;
@@ -562,8 +570,8 @@ footer img{
     {
         color: white;
         position: absolute;
-        top: 29%;
-        left: 60%;
+        top: 25%;
+        left: 47%;
         right: 0%;
         bottom: 1%;
         width: 111px;
@@ -740,15 +748,20 @@ footer img{
         flex-direction: column;
         justify-content: space-between;
         flex-wrap: wrap;
-        width: 100%;
-        height: 300px;
+        width: 100vw;
+        height: 250px;
         background-color:rgb(66, 2, 66);
-        padding: 40px 30px;
+        padding: 40px 20px;
         gap: 5px;
         font-size: 14px;
         color: pink;
+
     }
 
+    footer img{
+        width: 25px;
+        border-radius: 100%;
+    }
 
     #aluno1{
         width: 33.33%;
@@ -785,25 +798,41 @@ footer img{
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
+        padding-right: 20px;
+        margin-left: 10px ;
     }
 
     #aluno3 p{
+        text-align: right;
         width: 100%;
         display: flex;
         justify-content: flex-end;
-        text-align: right;
+    }
+
+    #aluno4{
+        width: 33.33%;
+        gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: absolute;
+        left: 33.33%;
+        top: 2050px;
+    }
+    
+    #aluno4 p{
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     #copyright{
         position: relative;
-        display: block;
-        justify-content: center;
-        align-items: center;
         text-align: center;
-        bottom: 20px;
-        right: 825px;
-
-
+        right: 850px;
+        width: 100%;
+        top: 145px;
     }
 }
     /* Resoluções superiores a 1280px*/
@@ -827,6 +856,23 @@ footer img{
         header li{
             list-style: none;
             display: inline-flex;
+        }
+
+        nav{
+            display: none;
+        }
+        
+
+        .nav-desktop{
+            display: inline-flex;
+        }
+
+        .nav-desktop li{
+            transition: .3s;
+        }
+
+        .nav-desktop li:hover{
+            color: red;
         }
 
         .nav-btn{
@@ -862,7 +908,7 @@ footer img{
             flex-direction: column;
             width: 100%;
             height: 100vh;
-            background-image: url("../img/bannergames.webp");
+            background-image: url("../img/bloodborne.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center top;
@@ -900,9 +946,9 @@ footer img{
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            width: 50%;
+            width: 30%;
             height: 100%;
-            padding: 10px 0;
+            padding: 10px 0px;
             gap: 10px;
         }
 
@@ -936,6 +982,16 @@ footer img{
             z-index: 1;
         } 
 
+        .fecharModal{
+            position: fixed;
+            top: 24%;
+            left: 17%;
+            right: 0%;
+            bottom: 0%;
+            width: 6rem;
+
+        }
+
         .modal:target
         {
             visibility: visible;
@@ -946,7 +1002,7 @@ footer img{
         .joystick{
             position: absolute;
             top: 9%;
-            left: 50%;
+            left: 81%;
             right: 0%;
             bottom: 0%; 
             width: 100px;
@@ -958,8 +1014,8 @@ footer img{
         {
             color: white;
             position: absolute;
-            top: 29%;
-            left: 30%;
+            top: 28%;
+            left: 77%;
             right: 0%;
             bottom: 1%;
             width: 111px;
@@ -970,7 +1026,7 @@ footer img{
         {
             position: relative;
             top: -5%;
-            left: 0%;
+            left: 18%;
             right: 0%;
             bottom: 1%;
             width: 70vw;
@@ -1027,7 +1083,7 @@ footer img{
             align-items: center;
             flex-wrap: wrap;
             flex-direction: row;
-            width: 100%;
+            width: 50%;
             height: 100%;
             padding: 10px 0px;
         }
@@ -1035,8 +1091,8 @@ footer img{
         .cards{
             display: flex;
             flex-wrap: wrap;
-            width: 700px;
-            height: 500px;
+            width: 200px;
+            height: 300px;
             border: 1px solid whitesmoke;
             margin-top: 20px;
             background-color: rgb(66, 2, 66);
@@ -1053,8 +1109,8 @@ footer img{
         .card-content{
             display: flex;
             justify-content: center;
-            width: 100%;
-            height: 300px;
+            width: 300px;
+            height: 400px;
             color: Pink;
         }
 
@@ -1063,7 +1119,7 @@ footer img{
             justify-content: center;
             align-items: flex-start;
             flex-wrap: wrap;
-            width: 680px;
+            width: 580px;
             height: 230px;
             text-align: left;
             margin-top: 10px;
@@ -1091,6 +1147,14 @@ footer img{
             cursor: pointer;
         }
 
+        .video{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 5px;
+            width: 50%;
+        }
+
         button a{
             text-align: center;
             text-decoration: none;
@@ -1109,21 +1173,21 @@ footer img{
             flex-direction: column;
             justify-content: space-between;
             flex-wrap: wrap;
-            width: 100%;
+            width: 100vw;
             height: 250px;
             background-color:rgb(66, 2, 66);
             padding: 40px 20px;
             gap: 5px;
             font-size: 14px;
             color: pink;
-
+    
         }
-
+    
         footer img{
-            width: 30px;
+            width: 25px;
             border-radius: 100%;
         }
-
+    
         #aluno1{
             width: 33.33%;
             gap: 10px;
@@ -1131,13 +1195,13 @@ footer img{
             flex-wrap: wrap;
             justify-content: flex-start;
         }
-
+    
         #aluno1 p{
             width: 100%;
             display: flex;
             justify-content: flex-start;
         }
-
+    
         #aluno2{
             width: 33.33%;
             gap: 10px;
@@ -1145,31 +1209,54 @@ footer img{
             flex-wrap: wrap;
             justify-content: center;
         }
-
+    
         #aluno2 p{
             width: 100%;
             display: flex;
             justify-content: center;
+            text-align: center;
         }
-
+    
         #aluno3{
             width: 33.33%;
             gap: 10px;
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-end;
+            padding-right: 20px;
+            margin-left: 10px ;
         }
-
+    
         #aluno3 p{
             width: 100%;
             display: flex;
             justify-content: flex-end;
         }
-
+    
+        #aluno4{
+            width: 33.33%;
+            gap: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: absolute;
+            left: 33.33%;
+            top: 2100px;
+        }
+        
+        #aluno4 p{
+            text-align: center;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    
         #copyright{
             position: relative;
-            right: 1670px;
+            text-align: center;
+            right: 1270px;
             width: 100%;
+            top: 140px;
         }
-
     }
+

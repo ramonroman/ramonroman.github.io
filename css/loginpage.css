@@ -243,3 +243,365 @@ section a
     box-shadow: 0px 3px 2px purple;
     cursor: pointer;
 }
+
+/* Ajuste para resolução até 1280px */
+
+@media (min-width: 425px) and (max-width: 767px){
+
+    .modal{ 
+        background-color: black;
+        position: fixed;
+        visibility: hidden;
+        top: 15%;
+        left: 12%;
+        width: 83vw;
+        height: 54vh;
+        opacity: 1;
+        border-radius: 100px;
+        border-radius: 14px;
+       
+    
+    } 
+
+    
+
+.joystick{
+    position: absolute;
+    top: 24%;
+    left: 39%;
+    right: 0%;
+    bottom: 0%;
+    width: 57px;
+    height: 65px;
+
+}
+
+.login
+{
+    position: absolute;
+    top: 41%;
+    left: 26%;
+    right: 0%;
+    bottom: 1%;
+    width: 111px;
+    height: 108px;
+
+}
+
+
+.background
+{
+
+
+  
+    position: relative;
+    right: 1%;
+    bottom: 1%;
+  
+    opacity: 144%;
+    z-index: -2;
+    border-radius: 14px;
+
+
+    top: -4%;
+    left: 0%;
+    width: 83vw;
+    height: 54vh;
+
+
+}
+
+
+
+
+    .btn_Enviar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'roboto';
+    font-size: 19px;
+    height: 36px;
+    width: 175px;
+    background-color: purple;
+    opacity: 5.7;
+    margin-top: 17px;
+    box-shadow: 0px 3px 2px purple;
+    cursor: pointer;
+}
+
+}
+
+/* Resoluções superiores a 768px*/
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+    .modal{ 
+        background-color: black;
+        position: fixed;
+        visibility: hidden;
+        top: 15%;
+        left: 12%;
+        width: 83vw;
+        height: 54vh;
+        opacity: 1;
+        border-radius: 100px;
+        border-radius: 14px;
+       
+    
+    } 
+
+    
+
+.joystick{
+    position: absolute;
+    top: 24%;
+    left: 44%;
+    right: 0%;
+    bottom: 0%;
+    width: 57px;
+    height: 65px;
+
+}
+
+.login
+{
+    position: absolute;
+    top: 41%;
+    left: 36%;
+    right: 0%;
+    bottom: 1%;
+    width: 111px;
+    height: 108px;
+
+}
+
+
+.background
+{
+
+
+  
+    position: relative;
+    right: 1%;
+    bottom: 1%;
+  
+    opacity: 144%;
+    z-index: -2;
+    border-radius: 14px;
+
+
+    top: -4%;
+    left: 0%;
+    width: 83vw;
+    height: 54vh;
+
+
+}
+
+
+
+
+    .btn_Enviar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'roboto';
+    font-size: 19px;
+    height: 36px;
+    width: 175px;
+    background-color: purple;
+    opacity: 5.7;
+    margin-top: 17px;
+    box-shadow: 0px 3px 2px purple;
+    cursor: pointer;
+}
+
+}
+
+
+/* Resoluções superiores a 1024px*/
+
+@media (min-width: 1025px) and (max-width: 1440px){
+
+
+    body{
+        overflow-x: hidden;
+    }
+    .modal{ 
+        background-color: black;
+        position: fixed;
+        visibility: hidden;
+        top: 15%;
+        left: 12%;
+        width: 83vw;
+        height: 54vh;
+        opacity: 1;
+        border-radius: 100px;
+        border-radius: 14px;
+       
+    
+    } 
+
+    
+
+.joystick{
+    position: absolute;
+    top: 24%;
+    left: 44%;
+    right: 0%;
+    bottom: 0%;
+    width: 103px;
+    height: 100px;
+
+}
+
+.login
+{
+    position: absolute;
+    top: 51%;
+    left: 41%;
+    right: 0%;
+    bottom: 1%;
+    width: 117px;
+    height: 114px;
+
+}
+
+
+.background
+{
+
+
+  
+    position: relative;
+    right: 1%;
+    bottom: 1%;
+  
+    opacity: 144%;
+    z-index: -2;
+    border-radius: 14px;
+
+
+    top: -4%;
+    left: 0%;
+    width: 83vw;
+    height: 54vh;
+
+
+}
+
+
+
+
+    .btn_Enviar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'roboto';
+    font-size: 19px;
+    height: 36px;
+    width: 175px;
+    background-color: purple;
+    opacity: 5.7;
+    margin-top: 17px;
+    box-shadow: 0px 3px 2px purple;
+    cursor: pointer;
+}
+
+}
+
+
+
+
+    /* Resoluções superiores a 1280px*/
+    @media (min-width: 2560px) and (max-width: 3000px){
+    
+        body{
+            overflow-x: hidden;
+        }
+
+        .modal{ 
+            background-color: black;
+            position: fixed;
+            visibility: hidden;
+            top: 15%;
+            left: 12%;
+            width: 83vw;
+            height: 54vh;
+            opacity: 1;
+            border-radius: 100px;
+            border-radius: 14px;
+           
+        
+        } 
+    
+    .joystick{
+        position: absolute;
+        top: 14%;
+        left: 42%;
+        right: 0%;
+        bottom: 0%;
+        width: 151px;
+        height: 137px;
+    
+    }
+    
+    .login
+    {
+        position: absolute;
+        top: 42%;
+        left: 42%;
+        right: 0%;
+        bottom: 1%;
+        width: 117px;
+        height: 114px;
+    
+    }
+    
+    
+    .background
+    {
+    
+    
+      
+        position: relative;
+        right: 1%;
+        bottom: 1%;
+      
+        opacity: 144%;
+        z-index: -2;
+        border-radius: 14px;
+    
+    
+        top: -4%;
+        left: 0%;
+        width: 83vw;
+        height: 54vh;
+    
+    
+    }
+    
+    
+    
+    
+        .btn_Enviar
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'roboto';
+        font-size: 19px;
+        height: 36px;
+        width: 175px;
+        background-color: purple;
+        opacity: 5.7;
+        margin-top: 17px;
+        box-shadow: 0px 3px 2px purple;
+        cursor: pointer;
+    }
+    
+    
+    }

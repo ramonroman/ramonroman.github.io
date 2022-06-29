@@ -8,10 +8,10 @@
 
 body{
     max-width: 425px;
-    width: 100%;
     font-family: 'roboto', sans-serif;
     letter-spacing: 2px;
     overflow-x: hidden;
+    background-color: rgb(66, 2, 66);
 }
 
 
@@ -51,13 +51,13 @@ header img{
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 100%;
+    width: 425px;
     height: 100vh;
     background-image: url("../img/tlou2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
-    background-attachment: scroll;
+    background-attachment: fixed;
 }
 
 .ver-mais{
@@ -150,7 +150,7 @@ header img{
     color: white;
     position: absolute;
     top: 29%;
-    left: 30%;
+    left: 25%;
     right: 0%;
     bottom: 1%;
     width: 111px;
@@ -201,7 +201,7 @@ main {
     background-image: url("../img/bannergames.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: fixed;
 
 }
 
@@ -543,11 +543,20 @@ footer img{
         opacity: 1;
         
     } 
+    .fecharModal{
+        position: fixed;
+        top: 24%;
+        left: 17%;
+        right: 0%;
+        bottom: 0%;
+        width: 6rem;
+
+    }
 
     .joystick{
         position: absolute;
         top: 9%;
-        left: 66%;
+        left: 53%;
         right: 0%;
         bottom: 0%; 
         width: 100px;
@@ -559,8 +568,8 @@ footer img{
     {
         color: white;
         position: absolute;
-        top: 29%;
-        left: 60%;
+        top: 25%;
+        left: 47%;
         right: 0%;
         bottom: 1%;
         width: 111px;
@@ -737,15 +746,20 @@ footer img{
         flex-direction: column;
         justify-content: space-between;
         flex-wrap: wrap;
-        width: 100%;
-        height: 300px;
+        width: 100vw;
+        height: 250px;
         background-color:rgb(66, 2, 66);
-        padding: 40px 30px;
+        padding: 40px 20px;
         gap: 5px;
         font-size: 14px;
         color: pink;
+
     }
 
+    footer img{
+        width: 25px;
+        border-radius: 100%;
+    }
 
     #aluno1{
         width: 33.33%;
@@ -782,27 +796,45 @@ footer img{
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
+        padding-right: 20px;
+        margin-left: 10px ;
     }
 
     #aluno3 p{
+        text-align: right;
         width: 100%;
         display: flex;
         justify-content: flex-end;
-        text-align: right;
+    }
+
+    #aluno4{
+        width: 33.33%;
+        gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: absolute;
+        left: 33.33%;
+        top: 2050px;
+    }
+    
+    #aluno4 p{
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     #copyright{
         position: relative;
-        display: block;
-        justify-content: center;
-        align-items: center;
         text-align: center;
-        bottom: 20px;
-        right: 825px;
-
-
+        right: 850px;
+        width: 100%;
+        top: 145px;
     }
 }
+
+
     /* Resoluções superiores a 1280px*/
     @media (min-width: 1281px) and (max-width: 3000px){
         body{
@@ -933,6 +965,16 @@ footer img{
             z-index: 1;
         } 
 
+        .fecharModal{
+            position: fixed;
+            top: 24%;
+            left: 17%;
+            right: 0%;
+            bottom: 0%;
+            width: 6rem;
+
+        }
+
         .modal:target
         {
             visibility: visible;
@@ -943,7 +985,7 @@ footer img{
         .joystick{
             position: absolute;
             top: 9%;
-            left: 50%;
+            left: 81%;
             right: 0%;
             bottom: 0%; 
             width: 100px;
@@ -955,8 +997,8 @@ footer img{
         {
             color: white;
             position: absolute;
-            top: 29%;
-            left: 30%;
+            top: 28%;
+            left: 77%;
             right: 0%;
             bottom: 1%;
             width: 111px;
@@ -967,7 +1009,7 @@ footer img{
         {
             position: relative;
             top: -5%;
-            left: 0%;
+            left: 18%;
             right: 0%;
             bottom: 1%;
             width: 70vw;
@@ -1170,3 +1212,429 @@ footer img{
         }
 
     }
+        /* Resoluções superiores a 1280px*/
+        @media (min-width: 1281px) and (max-width: 3000px){
+            body{
+                max-width: 3000px;
+                font-family: 'roboto', sans-serif;
+                letter-spacing: 2px;
+            }
+    
+            header{
+                display: flex;
+                align-items: center;
+                justify-content:space-between ;
+                width: 100%;
+                height: 90px;
+                background-color: rgb(66, 2, 66);
+                padding: 10px 50px;
+            }
+    
+            header li{
+                list-style: none;
+                display: inline-flex;
+            }
+    
+            nav{
+                display: none;
+            }
+            
+    
+            .nav-desktop{
+                display: inline-flex;
+            }
+    
+            .nav-desktop li{
+                transition: .3s;
+            }
+    
+            .nav-desktop li:hover{
+                color: red;
+            }
+    
+            .nav-btn{
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                border-radius: 20px;
+                width: 100px;
+                height: 30px;
+                font-size: 18px;
+            }
+    
+            #color{
+                color: red;
+            }
+    
+            header a{
+                color: white;
+                margin: 20px;
+                text-decoration: none;
+            }
+    
+            header img{
+                width: 70px;
+            }
+    
+            .banner{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                flex-direction: column;
+                width: 100%;
+                height: 100vh;
+                background-image: url("../img/tlou2.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center top;
+                background-attachment: fixed;
+            }
+    
+            .ver-mais{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                gap: 10px;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+    
+            .btn-banner{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: 'roboto';
+                font-size: 50px;
+                height: 100px;
+                width: 500px;
+                background-color: purple;
+                opacity: 0.7;
+                margin-top: 90px;
+                border: 2px solid black;
+            }
+    
+            .container-ver-mais{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 30%;
+                height: 100%;
+                padding: 10px 0px;
+                gap: 10px;
+            }
+    
+            .ver-mais h1{
+                width: 100%;
+                text-align: left;
+                color: red;
+                opacity: 0.8;
+                font-size:100px;
+            }
+    
+            .ver-mais p{
+                text-align: left;
+                width: 100%;
+                color: white;
+                font-size: 50px;
+    
+            }
+    
+            /*Começo Modal*/
+            .modal{ 
+                position: fixed;
+                visibility: hidden;
+                top: 25%;
+                left: 5%;
+                width: 49vw;
+                height: 78vh;
+                opacity: 1;
+                border-radius: 100px;
+                border-radius: 14px;
+                z-index: 1;
+            } 
+    
+            .fecharModal{
+                position: fixed;
+                top: 24%;
+                left: 17%;
+                right: 0%;
+                bottom: 0%;
+                width: 6rem;
+    
+            }
+    
+            .modal:target
+            {
+                visibility: visible;
+                opacity: 1;
+                
+            } 
+    
+            .joystick{
+                position: absolute;
+                top: 9%;
+                left: 81%;
+                right: 0%;
+                bottom: 0%; 
+                width: 100px;
+                height: 100px;
+    
+            }
+    
+            .login
+            {
+                color: white;
+                position: absolute;
+                top: 28%;
+                left: 77%;
+                right: 0%;
+                bottom: 1%;
+                width: 111px;
+                height: 108px;
+            }
+    
+            .background
+            {
+                position: relative;
+                top: -5%;
+                left: 18%;
+                right: 0%;
+                bottom: 1%;
+                width: 70vw;
+                height: 50vh;
+                opacity: 143%;
+                z-index: -2;
+                border-radius: 14px;
+            }
+    
+            .btn_Enviar
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: 'roboto';
+                font-size: 19px;
+                height: 36px;
+                width: 175px;
+                background-color: purple;
+                opacity: .9;
+                color: white;
+                margin-top: 17px;
+                box-shadow: 0px 3px 2px purple;
+                cursor: pointer;
+            }
+            /*Fim Modal*/
+    
+            #games{
+                width: 100%;
+                color: white;
+                background-color: rgb(66, 2, 66);
+                text-align: center;
+                font-size: 50px;
+            }
+    
+            main {
+                padding: 50px 0px;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap; 
+                background-image: url("../img/bannergames.webp");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+    
+            .container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                flex-direction: row;
+                width: 50%;
+                height: 100%;
+                padding: 10px 0px;
+            }
+    
+            .cards{
+                display: flex;
+                flex-wrap: wrap;
+                width: 200px;
+                height: 300px;
+                border: 1px solid whitesmoke;
+                margin-top: 20px;
+                background-color: rgb(66, 2, 66);
+                border-radius: 10px;
+                box-shadow: 5px 5px 5px purple;
+                margin-left: 30px;
+            }
+    
+            h2 {
+                text-align: center;
+                padding-top:20px;
+            }
+    
+            .card-content{
+                display: flex;
+                justify-content: center;
+                width: 300px;
+                height: 400px;
+                color: Pink;
+            }
+    
+            .card-text{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                width: 580px;
+                height: 200px;
+                text-align: left;
+                margin-top: 10px;
+                padding: 10px 10px;
+                background-color: rgb(0, 0, 0);
+                opacity: 0.5;
+                color: white;
+                border-radius: 10px;
+                padding-bottom: 100px;
+            }
+    
+            button{
+                display: flex;
+                position: relative;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                width: 300px;
+                height: 50px;
+                top: -70px;
+                border-radius: 10px;
+                opacity: 0.5;
+                background-color: black;
+                color: white;
+                cursor: pointer;
+            }
+    
+            .video{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                gap: 5px;
+                width: 50%;
+            }
+    
+            button a{
+                text-align: center;
+                text-decoration: none;
+                color: white;
+            }
+    
+            .cards img{
+                display: flex;
+                width: 100%;
+                height: 200px;
+                border-radius: 10px;
+            }
+    
+            footer{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                width: 100vw;
+                height: 250px;
+                background-color:rgb(66, 2, 66);
+                padding: 40px 20px;
+                gap: 5px;
+                font-size: 14px;
+                color: pink;
+        
+            }
+        
+            footer img{
+                width: 25px;
+                border-radius: 100%;
+            }
+        
+            #aluno1{
+                width: 33.33%;
+                gap: 10px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+        
+            #aluno1 p{
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+            }
+        
+            #aluno2{
+                width: 33.33%;
+                gap: 10px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        
+            #aluno2 p{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+        
+            #aluno3{
+                width: 33.33%;
+                gap: 10px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                padding-right: 20px;
+                margin-left: 10px ;
+            }
+        
+            #aluno3 p{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+            }
+        
+            #aluno4{
+                width: 33.33%;
+                gap: 10px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                position: absolute;
+                left: 33.33%;
+                top: 2100px;
+            }
+            
+            #aluno4 p{
+                text-align: center;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        
+            #copyright{
+                position: relative;
+                text-align: center;
+                right: 1270px;
+                width: 100%;
+                top: 140px;
+            }
+        }
+    
+    
